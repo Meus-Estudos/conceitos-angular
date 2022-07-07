@@ -1,0 +1,7 @@
+<div class="section-div">
+  <div *ngIf="canShow">
+    <p>testando</p>
+    <p *ngIf="name === 'Carol'; else nameNotFound">O nome é {{ name }}</p>
+    <ng-template #nameNotFound>O nome não foi encontrado</ng-template>
+  </div>
+</div>
